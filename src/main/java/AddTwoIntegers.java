@@ -1,4 +1,4 @@
-public class Palindrome {
+public class AddTwoIntegers {
     public static void main(String[] args) {
         int num = 121, reversedInteger = 0, remainder, originalInteger;
         originalInteger = num;
