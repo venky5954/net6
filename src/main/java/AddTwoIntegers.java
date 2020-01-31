@@ -1,9 +1,19 @@
-public class AddTwoIntegers {
+public class Prime {
     public static void main(String[] args) {
-        
-        int first = 10;
-        int second = 20;
-        int sum = first + second;
-        System.out.println("The sum is: " + sum);
+        int num = 29;
+        boolean flag = false;
+        for(int i = 2; i <= num/2; ++i)
+        {
+            // condition for nonprime number
+            if(num % i == 0)
+            {
+                flag = true;
+                break;
+            }
+        }
+        if (!flag)
+            System.out.println(num + " is a prime number.");
+        else
+            System.out.println(num + " is not a prime number.");
     }
 }
