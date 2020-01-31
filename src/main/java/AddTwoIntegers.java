@@ -1,9 +1,13 @@
-public class AddTwoIntegers {
+public class Fibonacci {
     public static void main(String[] args) {
-        
-        int first = 10;
-        int second = 20;
-        int sum = first + second;
-        System.out.println("The sum is: " + sum);
+        int n = 10, t1 = 0, t2 = 1;
+        System.out.print("First " + n + " terms: ");
+        for (int i = 1; i <= n; ++i)
+        {
+            System.out.print(t1 + " + ");
+            int sum = t1 + t2;
+            t1 = t2;
+            t2 = sum;
+        }
     }
 }
